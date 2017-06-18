@@ -1,0 +1,27 @@
+
+# PHANTOMX
+git clone https://github.com/HumaRobotics/phantomx_gazebo.git
+git clone https://github.com/HumaRobotics/phantomx_description.git
+git clone https://github.com/HumaRobotics/phantomx_control.git
+sudo apt-get install ros-kinetic-joint-state-controller
+sudo apt-get install ros-kinetic-effort-controllers
+sudo apt-get install ros-kinetic-position-controllers
+sudo apt-get install ros-kinetic-gazebo-ros-control
+sudo apt-get install ros-kinetic-ros-control
+--roscore
+--roslaunch phantomx_gazebo phantomx_gazebo.launch
+--rosrun phantomx_gazebo walker_demo.py
+rostopic info /phantomx/cmd_vel
+rostopic info /phantomx/j_tibia_rf_position_controller/state
+rosparam list 
+rosparam get /phantomx/joint_state_controller/publish_rate
+rqt_dep
+rqt_graph
+## Remove phantomx rm leg
+>> remove rm leg in file phantomx_urdf.xacro
+>> remove rm leg in file walker.py
+>> remove rm leg in file phantomx_control.yaml
+>> remove rm leg in file phantomx_control.launch
+--rosrun xacro xacro.py -o phantomx.urdf phantomx.xacro
+--check_urdf phantomx.urdf
+
