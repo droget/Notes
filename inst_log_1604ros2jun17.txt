@@ -1,0 +1,12 @@
+﻿1. Basisinstallasjon
+- installert Ubuntu 16.04 via usb disk
+- installert proprietær Nvidia driver (ellers problemer med Gazebo)
+- installert Visual Studio Code
+- installert Searchmonkey
+- installert teamviewer (sudo dpkg -i teamviewer_12.0.76279_i386.deb;
+   sudo apt-get install -f)
+
+
+
+
+
