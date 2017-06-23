@@ -4,6 +4,8 @@
 
 1604kinjun17:
 - https://github.com/davetcoleman/ros_control_boilerplate.git
+- Node.js 6.11.9 LTS
+- Azure
 
 1604ros2jun17:
 - empty
